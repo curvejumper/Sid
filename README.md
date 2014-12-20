@@ -8,8 +8,9 @@ Instead of using your voice to control your computer, this currently uses text m
 
 ## Goal
 
-The goal of the project is to create a application that interfaces with the core of the program to relay more 
-complicated commands. As of right now, texting is limited due to limits from carriers and the gmail gateway it uses
+The goal of the project was to create a simple device, connected in our house, that could interface with technology we have with us regularly.
+The dream was to send simple commands to this device, Sid, and have Sid integrated with technology inside the house.
+As of right now, texting is bottlenecked due to limits from carriers and the gmail gateway it uses
 
 ## The future for this project
 
