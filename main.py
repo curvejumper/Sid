@@ -7,7 +7,7 @@ from conversation import Conversation
 if __name__ == '__main__':
     
     print "================================================="
-    print " Jarvis personal assistant extraordinar          "
+    print " Sid personal assistant extraordinar          "
     print " By Michael Ortiz                                "
     print " ================================================"
     
