@@ -1,17 +1,24 @@
 #!/usr/bin/env python
-import yaml
 import sys
 from conversation import Conversation
 
 
 if __name__ == '__main__':
     
-    print "================================================="
-    print " Sid personal assistant extraordinar          "
-    print " By Michael Ortiz                                "
-    print " ================================================"
+    """
+    This is the main file that will simply start the process of conversing with the user.
+    The program will load a profile (if present) and then go to the conversation class for 
+    constant handleing of the program 
     
-    profile = yaml.safe_load(open("profile.yml", "r"))
+    """
+    
+    print("=================================================")
+    print(" Sid personal assistant extraordinar          ")
+    print(" By Michael Ortiz                                ")
+    print(" ================================================")
+    
+    
+    generateProfile('user.txt')
     
     conversation = Conversation(profile)
     
