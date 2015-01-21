@@ -2,7 +2,6 @@
 
 import re
 from getpass import getpass
-import yaml
 from pytz import timezone
 import feedparser
 
@@ -10,7 +9,7 @@ import feedparser
 def run():
     profile = {}
 
-    print "Welcome to the profile populator. If, at any step, you'd prefer not to enter the requested information, just hit 'Enter' with a blank field to continue."
+    print ("Welcome to the profile populator. If, at any step, you'd prefer not to enter the requested information, just hit 'Enter' with a blank field to continue.")
 
     def simple_request(var, cleanVar, cleanInput=None):
         input = raw_input(cleanVar + ": ")
@@ -24,7 +23,7 @@ def run():
     simple_request('last_name', 'Last name')
 
     # gmail
-    print "\nJasper uses your Gmail to send notifications. Alternatively, you can skip this step (or just fill in the email address if you want to receive email notifications) and setup a Mailgun account, as at http://jasperproject.github.io/documentation/software/#mailgun.\n"
+    print ("\nJasper uses your Gmail to send notifications. Alternatively, you can skip this step (or just fill in the email address if you want to receive email notifications) and setup a Mailgun account, as at http://jasperproject.github.io/documentation/software/#mailgun.\n")
     simple_request('gmail_address', 'Gmail address')
     profile['gmail_password'] = getpass()
 
